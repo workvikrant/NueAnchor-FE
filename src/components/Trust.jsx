@@ -41,9 +41,9 @@ const Trust = () => {
               </p>
               
               {/* Main heading */}
-              <h2 className="text-4xl lg:text-4xl font-bold text-blue-600 leading-tight">
+              <h2 className="text-4xl lg:text-4xl font-bold text-[#195FA6] leading-tight">
                 Your Trusted Partner<br />
-                <span className="text-blue-800">in Growth</span>
+                <span className="text-[#195FA6]">in Growth</span>
               </h2>
               
               
@@ -56,7 +56,7 @@ const Trust = () => {
               {trustData.map((item, index) => (
                 <div key={index} className="flex flex-col items-center text-center space-y-4">
                   {/* Circular Icon */}
-                  <div className="w-20 h-20 lg:w-24 lg:h-24 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                  <div className="w-20 h-20 lg:w-24 lg:h-24 bg-[#195FA6] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#195FA6] transition-colors duration-300">
                     {item.icon}
                   </div>
                   

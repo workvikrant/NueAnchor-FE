@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../assets/LandingPage/Hero.png'
+
 export const Hero = () => {
   return (
     <section className="bg-[linear-gradient(to_right,#DDDDDDBD,#DDDDDD,#FFFFFF,#DDDDDD)] to-white">
@@ -14,8 +15,8 @@ export const Hero = () => {
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
-                <span className="text-gray-900">Empowering Growth,</span>
+              <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight font-">
+                <span className="font-baskerville text-gray-900">Empowering Growth,</span>
                 <br />
                 <span className="text-[#1D69B5]">Wellness, and Community</span>
               </h1>
