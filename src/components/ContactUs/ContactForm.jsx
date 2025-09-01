@@ -101,7 +101,7 @@ const ContactForm = ({
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Full Name */}
+       
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
               Full Name <span className='text-red-600'>*</span>
@@ -122,7 +122,7 @@ const ContactForm = ({
             )}
           </div>
 
-          {/* Email */}
+       
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
               Email Address <span className='text-red-600'>*</span>

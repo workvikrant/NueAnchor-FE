@@ -52,7 +52,7 @@ const Brands = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-gray-600  font-FigTree text-[22px] font-semibold tracking-wider uppercase mb-2">Our Brands</p>
-          <h2 className="text-4xl lg:text-4xl font-baskerville font-bold bg-gradient-to-r from-[#1D69B5] via- to-[#B62A88] bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-4xl font-baskerville font-bold bg-gradient-to-r from-[#1D69B5] via-[#7758a1] to-[#B62A88] bg-clip-text text-transparent">
             Discover the World of NeuAnchor
           </h2>
         </div>

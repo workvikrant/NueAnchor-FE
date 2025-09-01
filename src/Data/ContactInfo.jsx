@@ -54,7 +54,6 @@ const ContactInfo = ({
           </div>
         </div>
 
-        {/* Office */}
         <div className="flex items-start space-x-4">
           <div className="flex-shrink-0 w-12 h-12 bg-icon rounded-full flex items-center justify-center">
             <MapPin className="w-5 h-5 text-[#1D69B5]" />
@@ -67,7 +66,7 @@ const ContactInfo = ({
           </div>
         </div>
 
-        {/* Map Placeholder */}
+
         <div className="mt-6 rounded-lg overflow-hidden border-2 border-dashed border-blue-200 bg-blue-50">
           <div className="h-48 flex items-center justify-center">
             <div className="text-center text-[#1D69B5]">
