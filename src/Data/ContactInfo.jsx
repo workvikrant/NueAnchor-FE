@@ -1,5 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import MyMap from '../components/UI/Map';
+
 
 const ContactInfo = ({
   className = '',
@@ -69,10 +71,8 @@ const ContactInfo = ({
 
         <div className="mt-6 rounded-lg overflow-hidden border-2 border-dashed border-blue-200 bg-blue-50">
           <div className="h-48 flex items-center justify-center">
-            <div className="text-center text-[#1D69B5]">
-              <MapPin className="w-12 h-12 mx-auto mb-2 opacity-50" />
-              <p className="text-sm font-medium">Interactive Map</p>
-              <p className="text-xs opacity-75">Map integration placeholder</p>
+            <div className="h-48 w-full">
+              <MyMap />
             </div>
           </div>
         </div>
