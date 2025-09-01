@@ -24,14 +24,14 @@ const ContactInfo = ({
       <div className="p-6 space-y-6">
         {/* Email */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-            <Mail className="w-5 h-5 text-[#1D69B5]" />
+          <div className="flex-shrink-0 w-12 h-12 bg-icon borde=2 border-[#BBD5EE]  rounded-full flex items-center justify-center">
+            <Mail className="w-5 h-5 text-[#1D69B5] " />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+            <h3 className="font-semibold text-black mb-1">Email</h3>
             <a 
               href={`mailto:${email}`}
-              className="text-[#1D69B5] hover:text-blue-800 transition-colors duration-200"
+              className="text-black hover:text-black transition-colors duration-200"
             >
               {email}
             </a>
@@ -40,14 +40,14 @@ const ContactInfo = ({
 
         {/* Phone */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex-shrink-0 w-12 h-12 bg-icon rounded-full flex items-center justify-center">
             <Phone className="w-5 h-5 text-[#1D69B5]" />
           </div>
           <div>
             <h3 className="font-semibold text-gray-900 mb-1">Phone/WhatsApp</h3>
             <a 
               href={`tel:${phone}`}
-              className="text-[#1D69B5] hover:text-blue-800 transition-colors duration-200"
+              className="text-black hover:black transition-colors duration-200"
             >
               {phone}
             </a>
@@ -56,7 +56,7 @@ const ContactInfo = ({
 
         {/* Office */}
         <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex-shrink-0 w-12 h-12 bg-icon rounded-full flex items-center justify-center">
             <MapPin className="w-5 h-5 text-[#1D69B5]" />
           </div>
           <div>

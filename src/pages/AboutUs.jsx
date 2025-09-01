@@ -3,34 +3,39 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TeamMemberCard from '../components/AboutUs/TeamMemberCard';
 import CTA from '../components/CTA';
+import profile from '../assets/LandingPage/profile.svg'
+import Hero from '../assets/AboutUs/Hero.svg'
+import Story from '../assets/AboutUs/Story.svg';
+import mission from '../assets/AboutUs/mission.svg'
+
 const AboutUs = () => {
     const teamMembers = [
     {
       id: 1,
       name: "Full Name",
       designation: "DESIGNATION",
-      imageUrl: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600",
-      isActive: true
+      imageUrl: profile,
+      isActive: false
     },
     {
       id: 2,
       name: "Full Name",
       designation: "DESIGNATION",
-      imageUrl: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageUrl: profile,
       isActive: false
     },
     {
       id: 3,
       name: "Full Name",
       designation: "DESIGNATION",
-      imageUrl: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageUrl: profile,
       isActive: false
     },
     {
       id: 4,
       name: "Full Name",
       designation: "DESIGNATION",
-      imageUrl: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageUrl: profile,
       isActive: false
     }
   ];
@@ -39,16 +44,16 @@ const AboutUs = () => {
     <Header />
     <div className="mr-16 ml-16 mt-12">
       {/* Main heading */}
-      <h1 className="text-[52px] font-bold text-blank mb-6"
+      <h1 className="text-[46px] font-bold text-blank mb-6 leading-16"
             style={{fontFamily: 'Libre Baskerville'}}
       >
         NeuAnchor – Building Inclusive, Innovative,{' '}
-        <span className="text-[#175491] " style={{fontFamily: 'Libre Baskerville'}}>Impactful Futures</span>
+        <span className="text-[#175491] leading-1" style={{fontFamily: 'Libre Baskerville'}}>Impactful Futures</span>
       </h1>
       
       {/* Subtitle */}
       <p className="text-2xl font-medium text-black mb-12 max-w-7xl"
-      style={{fontFamily: 'Figtree'}}
+      style={{fontFamily: 'Figtree', fontWeight:500}}
       >
         A family of brands delivering solutions in education, careers, healthcare, events, hospitality, and gifting.
       </p>
@@ -56,31 +61,31 @@ const AboutUs = () => {
       {/* Hero image */}
       <div className="w-full">
         <img
-          src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src={Hero}
           alt="Happy family - father, mother and young child smiling together"
           className="w-full h-auto rounded-2xl shadow-lg"
         />
       </div>
 
-      <div className="max-w-6xl py-16">
-        <div className="grid lg:grid-cols-3 gap-8 items-start">
+      <div className="max-w-6xl py-16 ">
+        <div className="grid lg:grid-cols-3 gap-x-8 items-start">
             {/* Left side - Content (takes 2 columns) */}
-            <div className="space-y-2 lg:col-span-1">
-            <div>
-                <p className="text-sm font-medium text-gray-600 mb-2">
-                Who We Are
-                </p>
-                <h2 className="text-3xl font-bold text-blue-600 mb-6">
-                Our Story
-                </h2>
-            </div>
-            <div className="relative">
-                <img
-                src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Professional woman smiling"
-                className="w-full h-64 rounded-lg shadow-md object-cover"
-                />
-            </div>
+            <div className="space-y-2 lg:col-span-1 ">
+              <div>
+                  <p className="text-sm font-semibold font-Figtree text-black mb-2">
+                  Who We Are
+                  </p>
+                  <h2 className="text-3xl font-bold font-baskerville text-[#1D69B5] mb-6">
+                  Our Story
+                  </h2>
+              </div>
+              <div className="relative ">
+                  <img
+                  src={Story}
+                  alt="Professional woman smiling"
+                  className="w-full h-64 rounded-lg shadow-md object-cover"
+                  />
+              </div>
             
             
             </div>
@@ -89,7 +94,7 @@ const AboutUs = () => {
             {/* Right side - Image (takes 1 column) */}
             <div className="lg:col-span-2">
             
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 ml-12 text-gray-700 leading-relaxed">
                 <p>
                 NetAnchor was founded with a vision to bridge gaps across education, careers, 
                 special needs, and personal growth. With expertise spanning multiple industries, we 
@@ -118,14 +123,14 @@ const AboutUs = () => {
         </div>
         </div>
       
-        <div className="py-20 bg-gradient-to-br from-blue-50/80 via-gray-50 to-blue-100/60 -mx-16 px-16">
+        <div className="py-20 bg-[#EBF5FF] from-blue-50/80 via-gray-50 to-blue-100/60 -mx-16 px-16">
   <div className="max-w-7xl mx-auto">
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:h-[500px] items-center">
       
       {/* Mission Card - Top Left */}
       <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-10 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-blue-500/20 lg:self-start">
-        <h2 className="text-4xl font-bold mb-8 tracking-tight">Mission</h2>
-        <p className="text-blue-50/90 leading-relaxed text-lg font-light">
+        <h2 className="text-4xl font-bold mb-8 tracking-tight font-baskerville">Mission</h2>
+        <p className="text-blue-50/90 leading-relaxed text-lg font-light font-Figtree">
           To empower individuals, families, and organizations with transformative solutions across education, careers, wellness, and innovation.
         </p>
       </div>
@@ -134,7 +139,7 @@ const AboutUs = () => {
       <div className="relative lg:row-span-1 flex items-center justify-center">
         <div className="rounded-3xl overflow-hidden shadow-2xl h-full w-full hover:scale-105 transition-all duration-300 border-4 border-white/50 lg:h-[500px]">
           <img 
-            src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800" 
+            src={mission}
             alt="Group of young people collaborating"
             className="w-full h-full object-cover"
           />
@@ -144,8 +149,8 @@ const AboutUs = () => {
 
       {/* Vision Card - Bottom Right */}
       <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-3xl p-10 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-teal-500/20 lg:self-end">
-        <h2 className="text-4xl font-bold mb-8 tracking-tight">Vision</h2>
-        <p className="text-teal-50/90 leading-relaxed text-lg font-light">
+        <h2 className="text-4xl font-bold mb-8 tracking-tight font-baskerville">Vision</h2>
+        <p className="text-teal-50/90 leading-relaxed text-lg font-light font-figtree">
           To become India's most trusted ecosystem for inclusive growth and impactful learning.
         </p>
       </div>
