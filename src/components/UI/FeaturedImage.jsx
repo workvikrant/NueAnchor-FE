@@ -6,8 +6,8 @@ export const FeaturedImage = ({ selectedChoice }) => {
   
   return (
     <div className="lg:sticky lg:top-8">
-      <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
-        <div className="aspect-[4/3] overflow-hidden">
+      <div className="relative overflow-hidden rounded-2xl shadow-2xl  bg-white">
+        <div className="aspect-[4/3] w-[600px] overflow-hidden">
           <img
             src={selectedChoice.image}
             alt={selectedChoice.title}

@@ -3,6 +3,7 @@ import { choiceOptionsData } from '../../Data/choiceOptions.js';
 import { SectionHeader } from './SectionHeader';
 import { OptionsList } from './OptionsList';
 import { FeaturedImage } from './FeaturedImage';
+import Button from './Button.jsx';
 
 export const WhyChooseSection = ({ 
   title = "Why Choose Us", 
@@ -18,14 +19,24 @@ export const WhyChooseSection = ({
       <div className="max-w-7xl mx-auto">
         <SectionHeader title={title} subtitle={subtitle} />
 
-        <div className="grid lg:grid-cols-2 gap-24 items-start">
-          <OptionsList 
-            options={options}
-            selectedOption={selectedOption}
-            onOptionSelect={setSelectedOption}
-          />
+        <div className="grid lg:grid-cols-2 items-start">
+          <div className='mr-28 '>
+            <OptionsList 
+                options={options}
+                selectedOption={selectedOption}
+                onOptionSelect={setSelectedOption}
+            />
+            <div className='mt-4'>
+                <Button variant="secondary" size="md">
+                    Visit Site
+                </Button>
+            </div>
+          </div>
           
-          <FeaturedImage selectedChoice={selectedChoice} />
+          
+         
+            <FeaturedImage selectedChoice={selectedChoice} />
+          
         </div>
       </div>
     </section>

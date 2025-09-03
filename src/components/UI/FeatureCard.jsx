@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, FileUp as FileUser, GraduationCap } from 'lucide-react';
+import Button from './Button';
 
 // Icon mapping for dynamic icon selection
 const iconMap = {
@@ -25,6 +26,7 @@ const FeatureCard = ({ icon, title ,description}) => {
           </h3>
           <p>{description && <span className="font-normal font-Figtree"> {description}</span>}</p>
         </div>
+        
       </div>
     </div>
   );

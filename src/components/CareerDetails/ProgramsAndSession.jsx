@@ -10,19 +10,19 @@ const ProgramsSection = () => {
       id: 1,
       title: "1:1 consultation - For Students & families",
       image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Personalized guidance and support tailored to individual needs and goals."
+      description: ""
     },
     {
       id: 2,
       title: "Group workshops & seminars",
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Interactive learning experiences designed for collaborative growth and skill development."
+      description: ""
     },
     {
       id: 3,
       title: "Motivational talks and global speakings.",
       image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800",
-      description: "Inspiring presentations that motivate and empower audiences worldwide."
+      description: ""
     }
   ];
 
