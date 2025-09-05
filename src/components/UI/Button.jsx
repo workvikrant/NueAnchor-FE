@@ -11,8 +11,8 @@ const Button = ({
   const baseClasses = 'inline-flex items-center justify-center font-medium rounded-md transition-all duration-200 ';
   
   const variantClasses = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 shadow-md hover:shadow-lg',
-    secondary: 'bg-black text-white hover:bg-gray-700  shadow-md hover:shadow-lg',
+    primary: 'bg-blue-600 text-white mb-6 hover:bg-blue-700  focus:ring-blue-500 shadow-md hover:shadow-lg',
+    secondary: 'bg-[#3E3E3E] text-white hover:bg-gray-700  shadow-md hover:shadow-lg',
     outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white focus:ring-blue-500',
   };
 
