@@ -1,6 +1,6 @@
 import React from 'react';
 import { Anchor, Facebook, Twitter, Linkedin } from 'lucide-react';
-import footer from '../assets/LandingPage/footer.svg'
+import footer from '../assets/LandingPage/onlylogo.svg'
 
 const Footer = () => {
   const footerSections = [

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Anchor } from 'lucide-react';
-import logo from '../assets/LandingPage/Logo.svg'
+import logo from "../assets/LandingPage/neuanchorlogo.svg";
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
