@@ -10,6 +10,7 @@ import ProgramsSection from '../components/AcadmicDetials/ProgramsAndSession.jsx
 import WhyItMatters from '../components/AcadmicDetials/WhyItMatters.jsx';
 import { WhyChooseSection } from '../components/UI/WhyChooseSection.jsx';
 import HeroSection1 from '../components/AcadmicDetials/HeroSection.jsx';
+import { LearningPlatform } from '../components/UI/LearningPlatform.jsx';
 
 
 const AcademiesDetails = ({ className = '' }) => {
@@ -29,6 +30,7 @@ const AcademiesDetails = ({ className = '' }) => {
                     // options={customOptionsData}
                     title="Why Choose Indiana G"
                 />
+                <LearningPlatform />
 
 
                 

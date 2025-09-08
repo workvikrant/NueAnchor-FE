@@ -23,7 +23,7 @@ const AboutUs = () => {
       designation: "DESIGNATION",
       imageUrl: profile,
       isActive: false
-    },
+    },//8737841617
     {
       id: 3,
       name: "Full Name",
@@ -38,7 +38,7 @@ const AboutUs = () => {
       imageUrl: profile,
       isActive: false
     }
-  ];
+  ];//
   return (
     <section>
     <Header />
