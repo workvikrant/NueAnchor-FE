@@ -1,29 +1,66 @@
-import React from "react";
-import helpImg from "../assets/help.jpg";
+import React from 'react';
+import howWeHelpImg from '../../assets/StarsDetails/how-we-help.png';
 
-const HowWeHelp = () => {
-  return (
-    <section
-      className="py-16"
-      style={{
-        background:
-          "linear-gradient(279.59deg, #FFF7E3 0%, #E8FFEF 99.14%)",
-      }}
-    >
-      <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <img src={helpImg} alt="Help" className="rounded-lg shadow" />
-        <div>
-          <h3 className="text-2xl font-bold text-[#111927] mb-4">
-            How We Help
-          </h3>
-          <p className="text-[#575757]">
-            Our holistic approach combines therapies, family training, and
-            community awareness to create lasting impact.
-          </p>
+const CARD_DATA = [
+  {
+    icon: (
+      <svg width="24" height="24" fill="none"><path d="M12 2v20M2 12h20" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
+    ),
+    title: "Awareness",
+    desc: "Helping parents recognize individualized autism signs, providing clarity in moments of uncertainty."
+  },
+  {
+    icon: (
+      <svg width="24" height="24" fill="none"><path d="M12 2l7 7-7 7-7-7 7-7z" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
+    ),
+    title: "Guidance",
+    desc: "Structured pathways through therapy options, technology decisions, and career development."
+  },
+  {
+    icon: (
+      <svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="#D4A019" strokeWidth="2"/><path d="M8 12l2 2 4-4" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
+    ),
+    title: "Empowerment",
+    desc: "Equipping individuals and families to advocate and flourish in enriched, supportive environments."
+  }
+];
+
+const HowWeHelp = () => (
+  <section id="how" className="py-16 bg-gradient-to-r from-green-50 to-yellow-50">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      {/* Left image */}
+      <div className="flex-shrink-0 w-full md:w-1/2">
+        <img
+          src={howWeHelpImg}
+          alt="Group support"
+          style={{
+            width: '592px',
+            height: '388px',
+            borderRadius: '32px',
+            objectFit: 'cover',
+            opacity: 1,
+          }}
+          className="shadow"
+        />
+      </div>
+      {/* Right content */}
+      <div className="w-full md:w-1/2">
+        <h2 className="text-3xl font-semibold text-[#D4A019] mb-2">How We Help</h2>
+        <p className="text-gray-700 mb-6">
+          Our three-pillar approach ensures comprehensive support for every family and community we serve.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {CARD_DATA.map((card, idx) => (
+            <div key={idx} className="bg-white rounded-xl shadow p-5 flex flex-col items-start">
+              <div className="mb-3">{card.icon}</div>
+              <h4 className="font-semibold text-gray-900 mb-1">{card.title}</h4>
+              <p className="text-sm text-gray-600">{card.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default HowWeHelp;

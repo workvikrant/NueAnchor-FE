@@ -42,12 +42,6 @@ const HeroSection = () => {
             >
               Visit Site
             </a>
-            <a
-              href="#about"
-              className="inline-block bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-[8px] font-bold text-[16px] font-figtree"
-            >
-              Learn More
-            </a>
           </div>
         </div>
       </div>

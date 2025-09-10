@@ -1,28 +1,47 @@
+// src/components/StarDetails/Hero.jsx
 import React from "react";
-import heroImg from "../../assets/IndianaG/hero.png";
-import aboutPhoto from "../../assets/IndianaG/about.png";
-import whychoosePhoto from "../../assets/IndianaG/whychoose.png";
-
-;
+import heroChild from "../../assets/StarsDetails/hero-child.png"; // ✅ make sure this path and file extension are correct
 
 const Hero = () => {
   return (
-    <section className="relative">
-      <img src={heroImg} alt="Hero" className="w-full h-[520px] object-cover" />
-      <div className="absolute inset-0 bg-black/40" />
+    <section className="relative w-full max-w-[1440px] h-[520px] mx-auto overflow-hidden">
+      {/* Hero image */}
+      <img
+        src={heroChild}
+        alt="Hero"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#1F2937] opacity-[0.28]" />
 
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-3xl md:text-5xl font-bold max-w-xl">
-            Empowering Families to Navigate Autism with Clarity & Confidence
+      {/* Text content */}
+      <div className="absolute inset-0 flex items-center px-[68px]">
+        <div className="max-w-[600px] text-white">
+          <span className="inline-block bg-[#FFD600] text-[#1F2937] px-4 py-2 rounded-full text-[13px] font-bold mb-6 tracking-wide font-figtree">
+            NeuAnchor Stars
+          </span>
+
+          <h1 className="mt-2 text-[48px] leading-[56px] font-bold font-libre text-white">
+            Empowering Families to
+            <br />
+            Navigate Autism with{" "}
+            <span className="text-[#0b74a6]">Clarity & Confidence</span>
           </h1>
-          <p className="mt-4 max-w-md text-sm md:text-base">
-            Evidence-based guidance and compassionate support for every step of
-            the journey.
+
+          <p className="mt-6 text-[18px] text-white/90 max-w-[480px] font-medium font-figtree">
+            Guiding families, schools, and communities with two decades of lived
+            experience and proven solutions.
           </p>
-          <button className="mt-6 bg-[#1D69B5] px-6 py-3 rounded-md font-semibold">
-            Learn More
-          </button>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#"
+              className="inline-block bg-[#0b74a6] hover:bg-[#095a85] text-white px-7 py-3 rounded-[8px] shadow font-bold text-[16px] font-figtree"
+            >
+              Visit Site
+            </a>
+            {/* Removed Learn More button */}
+          </div>
         </div>
       </div>
     </section>

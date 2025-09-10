@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import BrandHeader from "../components/StarDetails/BrandHeaders";
+import HeroSection from "../components/StarDetails/HeroSection";
+import About from "../components/StarDetails/OurPurpose";
+import Categories from "../components/StarDetails/Services";
+import WhyChoose from "../components/StarDetails/Stories";
+import HowWeHelp from "../components/StarDetails/HowWeHelp";
+import CTA from "../components/StarDetails/CTA";
 
-import HeroSection from '../components/StarDetails/HeroSection.jsx';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
-import SubHeader from '../components/UI/SubHeader.jsx';
-import BrandsHeader from '../components/StarDetails/BrandHeaders.jsx';
-import WhatWeOffer from '../components/StarDetails/WhatWeOffer.jsx';
-import WhyItMatters from '../components/StarDetails/WhyItMatters.jsx';
-import Trust from '../components/StarDetails/Trust.jsx';
-import ProgramsSection from '../components/StarDetails/ProgramsAndSession.jsx';
-
-const StarDetails = ({ className = '' }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-const [showBrandsHeader, setShowBrandsHeader] = useState(false);
+const StarDetailPage = () => {
   return (
-    <section>
-        <Header />
-            
-                <BrandsHeader />
-                <HeroSection />
-                <ProgramsSection />
-
-         <Footer />
-    </section>
+    <>
+      <Header />
+      <BrandHeader />
+      <main className="bg-white">
+        <HeroSection />
+        <About />
+        <Categories />
+        <WhyChoose />
+        <HowWeHelp />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 };
 
-export default StarDetails;
+export default StarDetailPage;
