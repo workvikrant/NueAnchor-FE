@@ -11,6 +11,12 @@ import CareerDetails from './pages/CareerDetails'
 import EducationDetails from './pages/EducationDetails'
 import AcademiesDetails from './pages/AcademiesDetails'
 import StarDetails from './pages/StarDetails'
+import IndianaG from "./pages/IndianaG.jsx"
+
+
+
+
+ 
 
 
 function App() {
@@ -26,6 +32,9 @@ function App() {
             <Route path="/education" element={<EducationDetails />} />
             <Route path="/academies" element={<AcademiesDetails />} />
             <Route path="/stars" element={<StarDetails />} />
+            <Route path="/indiana-g" element={<IndianaG />} />
+           
+            
           </Routes>
     </div>
   )

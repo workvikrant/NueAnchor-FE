@@ -1,50 +1,32 @@
-import React from 'react';
-import Badge from '../EducationDetails/Badge';
+import React from "react";
+import heroImg from "../../assets/IndianaG/hero.png";
+import aboutPhoto from "../../assets/IndianaG/about.png";
+import whychoosePhoto from "../../assets/IndianaG/whychoose.png";
 
-import Heroimg from '../../assets/StarsDetails/Hero.png';
-import Button from '../UI/Button';
+;
 
-
-const HeroSection = () => {
+const Hero = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center">
-      
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${Heroimg})` }}
-      >
-        <div className="absolute inset-0  bg-opacity-20"></div>
-      </div>
+    <section className="relative">
+      <img src={heroImg} alt="Hero" className="w-full h-[520px] object-cover" />
+      <div className="absolute inset-0 bg-black/40" />
 
-   
-      <div className="relative z-10 w-[634px]   px-4 sm:px-6 lg:px-16">
-        <div className="max-w-2xl">
-       
-          <div className="bg-white rounded-2xl p-[40px] shadow-xl">
-            <div className="mb-2">
-              <Badge variant="primary">NeuAnchor Careers</Badge>
-            </div>
-            
-            <h1 className="text-4xl lg:text-[30px] font-bold  font-baskerville text-title mb-1 leading-tight ">
-              Crafted with love,  <br />
-              {/* <span>Young Adults</span> */}
-            </h1>
-            <h2 className="text-3xl lg:text-[30px] font-bold font-baskerville text-black mb-4 leading-tight">
-              delivered with sweetness.
-            </h2>
-            
-            <p className="text-lg text-black font-Figtree  mb-8 leading-relaxed">
-              From subject selection to building global-ready profiles, NeuAnchor Careers helps students and families make confident, informed choices.
-            </p>
-            
-            <Button variant="primary" size="lg">
-              Visit Site
-            </Button>
-          </div>
+      <div className="absolute inset-0 flex items-center">
+        <div className="max-w-7xl mx-auto px-6 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold max-w-xl">
+            Empowering Families to Navigate Autism with Clarity & Confidence
+          </h1>
+          <p className="mt-4 max-w-md text-sm md:text-base">
+            Evidence-based guidance and compassionate support for every step of
+            the journey.
+          </p>
+          <button className="mt-6 bg-[#1D69B5] px-6 py-3 rounded-md font-semibold">
+            Learn More
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default Hero;
