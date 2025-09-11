@@ -1,50 +1,122 @@
-import React from 'react';
-import Badge from '../EducationDetails/Badge';
+import React from "react";
+import heroImg from "../../assets/AcadmicDetails/academics-hero.jpg";
 
-import Heroimg from '../../assets/AcadmicDetails/AcadmicHero.png';
-import Button from '../UI/Button';
-
-
-const HeroSection1 = () => {
-  return (
-    <section className="relative min-h-[600px] flex items-center">
-      
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${Heroimg})` }}
+const AcademicsHero = () => (
+  <section
+    className="w-full relative flex items-center justify-start"
+    style={{
+      minHeight: "432px",
+      background: `url(${heroImg}) center right/cover no-repeat`,
+      padding: "0",
+      position: "relative",
+      overflow: "hidden",
+    }}
+  >
+    {/* Left blue overlay */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "55%",
+        height: "100%",
+        background: "linear-gradient(90deg, rgba(29,105,181,0.45) 80%, rgba(29,105,181,0.0) 100%)",
+        zIndex: 1,
+      }}
+    />
+    <div
+      className="relative z-10 flex flex-col justify-center items-start py-16"
+      style={{
+        minHeight: "432px",
+        marginLeft: "4vw", // Move text block further left
+        maxWidth: "500px",
+      }}
+    >
+      <span
+        className="inline-block mb-6 px-5 py-2 rounded-full bg-white text-[#1D69B5] font-medium"
+        style={{
+          fontFamily: "'Poppins', sans-serif",
+          fontSize: "15px",
+        }}
       >
-        <div className="absolute inset-0  bg-opacity-20"></div>
-      </div>
+        NeuAnchor Academies
+      </span>
+      <h1
+        style={{
+          fontFamily: "'Libre Baskerville', serif",
+          fontWeight: 700,
+          fontSize: "40px",
+          lineHeight: "128%",
+          letterSpacing: "0%",
+          color: "#fff",
+          marginBottom: "18px",
+          width: "594px",
+          height: "102px",
+          verticalAlign: "middle",
+          opacity: 1,
+        }}
+      >
+        Certified Online Courses
+        <br />
+        for Future-Ready Learning
+      </h1>
+      <p
+        style={{
+          fontFamily: "'Figtree', sans-serif",
+          fontWeight: 400,
+          fontSize: "20px",
+          lineHeight: "128%",
+          letterSpacing: "0%",
+          color: "#fff", // Changed to white text
+          width: "433px",
+          height: "78px",
+          verticalAlign: "middle",
+          opacity: 1,
+          marginBottom: "32px",
+          padding: "0", // Removed padding
+          borderRadius: "0", // Removed border radius
+          boxSizing: "border-box",
+        }}
+      >
+        Self-paced, globally benchmarked programs designed for corporates,
+        institutions, and elite households.
+      </p>
+      <button
+        type="button"
+        className="hero-btn"
+        style={{
+          fontFamily: "'Inter', sans-serif",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "150%",
+          letterSpacing: "0%",
+          background: "#FFD600",
+          color: "#000000",
+          border: "none",
+          borderRadius: "8px",
+          width: "234px",
+          height: "50px",
+          opacity: 1,
+          paddingLeft: "16px",
+          paddingRight: "16px",
+          verticalAlign: "middle",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+          cursor: "pointer",
+          transition: "all 0.2s",
+        }}
+      >
+        Visit Site
+      </button>
+      <style>
+        {`
+          .hero-btn:hover {
+            background: #FFD600;
+            color: #000000;
+          }
+        `}
+      </style>
+    </div>
+  </section>
+);
 
-  
-      <div className="relative z-10 w-[634px]   px-4 sm:px-6 lg:px-16">
-        <div className="max-w-2xl">
-          {/* Content Card */}
-          <div className="bg-white rounded-2xl p-[40px] shadow-xl ">
-            <div className="mb-2">
-              <Badge variant="primary">NeuAnchor Careers</Badge>
-            </div>
-            
-            <h1 className="text-4xl lg:text-[32px] font-bold font-baskerville text-title   ">
-              Certified Online Courses
-              {/* <span>Young Adults</span> */}
-            </h1>
-            <h2 className="text-3xl lg:text-[30px]  font-bold  font-baskerville text-black mb-4 ">
-              for Future-Ready Learning 
-            </h2>
-            
-            <p className="text-lg text-black mb-8 leading-relaxed">
-              From subject selection to building global-ready profiles, NeuAnchor Careers helps students and families make confident, informed choices.
-            </p>
-            
-            <Button variant="primary" size="lg">
-              Visit Site
-            </Button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default HeroSection1;
+export default AcademicsHero;

@@ -17,3 +17,7 @@
   --font-baskerville: "Libre Baskerville", serif;
   --font-weight-baskerville: 700;
 }
+
+.section-gap {
+  margin-top: 48px; /* or use the exact value from your Figma */
+}
