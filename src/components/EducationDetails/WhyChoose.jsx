@@ -1,4 +1,8 @@
 import React from "react";
+import growthImg from "../../assets/EducationDetailspage/growth.png";
+import policyImg from "../../assets/EducationDetailspage/policy.png";
+import uspImg from "../../assets/EducationDetailspage/usp.png"
+import expertiseImg from "../../assets/EducationDetailspage/experties.png"
 
 // Replace these SVGs with the exact SVG code exported from Figma
 const icons = [
@@ -15,9 +19,7 @@ const icons = [
       }}
     >
       {/* Paste the exact "growth/leaf" SVG from Figma here */}
-      <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
-        {/* ...your Figma SVG path for growth/leaf... */}
-      </svg>
+      <img src={growthImg} alt="Growth Icon" />
     </div>
   ),
   (
@@ -33,9 +35,7 @@ const icons = [
       }}
     >
       {/* Paste the exact "certificate/policy" SVG from Figma here */}
-      <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
-        {/* ...your Figma SVG path for certificate/policy... */}
-      </svg>
+      <img src={policyImg} alt="Policy Icon" />
     </div>
   ),
   (
@@ -51,9 +51,7 @@ const icons = [
       }}
     >
       {/* Paste the exact "star/USP" SVG from Figma here */}
-      <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
-        {/* ...your Figma SVG path for star/USP... */}
-      </svg>
+      <img src={uspImg} alt="USP Icon" />
     </div>
   ),
   (
@@ -69,9 +67,7 @@ const icons = [
       }}
     >
       {/* Paste the exact "medal/expertise" SVG from Figma here */}
-      <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
-        {/* ...your Figma SVG path for medal/expertise... */}
-      </svg>
+      <img src={expertiseImg} alt="Expertise Icon" />
     </div>
   ),
   (
@@ -99,21 +95,25 @@ const cards = [
     title: "Faster Growth with Expert Guidance",
     desc: "Accelerate your institution’s development with our proven methodologies and strategic insights gained from 20+ years of experience.",
     bg: "#DFF1E6",
+    img: growthImg,
   },
   {
     title: "Policy-Compliant Frameworks",
     desc: "Navigate complex regulations effortlessly with our comprehensive compliance solutions and up-to-date policy frameworks.",
     bg: "#fff",
+    img: policyImg,
   },
   {
     title: "Unique USPs for Every School",
     desc: "Develop distinctive value propositions that set your institution apart in the competitive educational landscape.",
     bg: "#fff",
+    img: uspImg,
   },
   {
     title: "20+ Years of Proven Expertise",
     desc: "Benefit from our extensive track record of successful transformations and deep understanding of educational challenges.",
     bg: "#fff",
+    img: expertiseImg,
   },
 ];
 
@@ -163,7 +163,9 @@ const WhyChoose = () => (
             height: "100%",
           }}
         >
-          <div className="mb-4">{icons[idx]}</div>
+          <div className="mb-4">
+            <img src={card.img} alt={card.title} style={{ width: 56, height: 56, borderRadius: 12, objectFit: "cover" }} />
+          </div>
           <h3
             style={{
               fontFamily: "'Figtree', sans-serif",
