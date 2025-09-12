@@ -19,7 +19,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div>
-            <img 
+             <img 
               src={logo}
               alt="NeuAnchor logo"
               className="w-full h-11 object-cover"
