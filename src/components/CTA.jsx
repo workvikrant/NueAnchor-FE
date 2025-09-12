@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <style>{`
@@ -41,7 +44,10 @@ const CTA = () => {
         <h3 className="cta-title">
           Ready to work with us?
         </h3>
-        <button className="cta-btn">
+        <button
+          className="cta-btn"
+          onClick={() => navigate('/contact')}
+        >
           Contact Us Today
         </button>
       </section>
