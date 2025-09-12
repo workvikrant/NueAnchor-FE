@@ -1,25 +1,22 @@
 import React from 'react';
 import howWeHelpImg from '../../assets/StarsDetails/how-we-help.png';
+import awarenessIcon from '../../assets/StarsDetails/awareness.png';
+import guidanceIcon from '../../assets/StarsDetails/guidance.png';
+import empowermentIcon from '../../assets/StarsDetails/empowerment.png';
 
 const CARD_DATA = [
   {
-    icon: (
-      <svg width="24" height="24" fill="none"><path d="M12 2v20M2 12h20" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
-    ),
+    icon: <img src={awarenessIcon} alt="Awareness Icon" style={{ width: 32, height: 32 }} />,
     title: "Awareness",
     desc: "Helping parents recognize individualized autism signs, providing clarity in moments of uncertainty."
   },
   {
-    icon: (
-      <svg width="24" height="24" fill="none"><path d="M12 2l7 7-7 7-7-7 7-7z" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
-    ),
+    icon: <img src={guidanceIcon} alt="Guidance Icon" style={{ width: 32, height: 32 }} />,
     title: "Guidance",
     desc: "Structured pathways through therapy options, technology decisions, and career development."
   },
   {
-    icon: (
-      <svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="#D4A019" strokeWidth="2"/><path d="M8 12l2 2 4-4" stroke="#D4A019" strokeWidth="2" strokeLinecap="round"/></svg>
-    ),
+    icon: <img src={empowermentIcon} alt="Empowerment Icon" style={{ width: 32, height: 32 }} />,
     title: "Empowerment",
     desc: "Equipping individuals and families to advocate and flourish in enriched, supportive environments."
   }

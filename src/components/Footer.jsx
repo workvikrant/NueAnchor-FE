@@ -54,10 +54,12 @@ const Footer = () => {
     <footer className="bg-[#195FA6] text-white py-16 px-24">
       <div className="max-w-7xl ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">
-          <div className="lg:col-span-1">
-            <a href="#" className="flex items-center   text-white text-2xl font-bold mb-6 no-underline">
-                <img src={footer} alt="Footer Asset" className='h-[220px] w-[200px]' />
-            </a>
+          <div className="lg:col-span-1 flex flex-col items-center">
+            <img src={footer} alt="NeuAnchor Symbol" className="h-46 w-46 mb-1" />
+            <span className="text-white text-4xl font-bold font-sans mt-0.5">NeuAnchor</span>
+            <span className="text-white text-xs font-normal font-sans mt-0 text-center block">
+              Anchoring Change, Navigating Growth
+            </span>
           </div>
           <div className="lg:col-start-2 pl-20 lg:col-span-4 ">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">

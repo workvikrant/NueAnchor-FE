@@ -3,10 +3,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BrandHeader from "../components/StarDetails/BrandHeaders";
 import HeroSection from "../components/StarDetails/HeroSection";
-import About from "../components/StarDetails/OurPurpose";
-import Categories from "../components/StarDetails/Services";
-import WhyChoose from "../components/StarDetails/Stories";
+import OurPurpose from "../components/StarDetails/OurPurpose";
+import Services from "../components/StarDetails/Services";
 import HowWeHelp from "../components/StarDetails/HowWeHelp";
+import Stories from "../components/StarDetails/Stories";
 import CTA from "../components/StarDetails/CTA";
 
 const StarDetailPage = () => {
@@ -16,10 +16,11 @@ const StarDetailPage = () => {
       <BrandHeader />
       <main className="bg-white">
         <HeroSection />
-        <About />
-        <Categories />
-        <WhyChoose />
-        <HowWeHelp />
+        <OurPurpose />
+        <Services />
+        <HowWeHelp /> 
+        <Stories />
+        
         <CTA />
       </main>
       <Footer />
